@@ -1,0 +1,24 @@
+{
+    "_parent_entries": [
+        [
+            "^",
+            "core_collection"
+        ],
+        [
+            "^",
+            "byname",
+            "git"
+        ]
+    ],
+    "tags": [
+        "git_repo",
+        "collection"
+    ],
+    "contained_entries": {
+        "onnxrt_lib_recipe": "onnxrt_lib_recipe",
+        "onnxrt_onnx_model_recipe": "onnxrt_onnx_model_recipe",
+        "pb2onnx_conversion_recipe": "pb2onnx_conversion_recipe"
+    },
+    "repo_name": "axs2onnxrt-dev",
+    "submodules": false
+}

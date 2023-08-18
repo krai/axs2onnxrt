@@ -1,0 +1,17 @@
+{
+    "_producer_rules": [
+        [ [ "downloaded", "onnxruntime_lib" ], [["get_kernel"],["byname", "downloader"],["download"]], { 
+        }, ["url", "version" ] ],
+        [ [ "extracted", "onnxruntime_lib" ], [["get_kernel"],["byname", "extractor"],["extract"]], { 
+        }, ["archive_path", "version", "file_name" ]]
+    ],
+
+    "version": "1.14.1",
+
+    "url": [ "AS^IS", "^^", "substitute", "https://github.com/microsoft/onnxruntime/releases/download/v#{version}#/onnxruntime-linux-x64-gpu-#{version}#.tgz"],
+    "file_name": [ "AS^IS", "^^", "substitute", "extracted/onnxruntime-linux-x64-gpu-#{version}#"],
+    "archive_path": [ "AS^IS", "^", "execute", [[
+        [ "byquery", [[ "^^", "substitute", "downloaded,onnxruntime_lib,version=#{version}#" ]]],
+        [ "get_path" ]
+    ]], {}, ["version"] ]
+}
