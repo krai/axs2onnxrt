@@ -1,14 +1,12 @@
 axs2onnxrt
 ===============================================
 
-In this repository we keep [axs](https://github.com/krai/axs) entries related to onnxrt.
+In this repository we keep [axs](https://github.com/krai/axs) entries related to download the Onnxruntime SDK, libraries and models.
 
 To import this repository and its dependencies into your **work_collection** , run
 ```
 axs byquery git_repo,collection,repo_name=axs2onnxrt
 ```
-
-Recipe for downloading the Onnxruntime SDK, libraries and models.
 
 Download and extract the onnxrt library.
 ```
